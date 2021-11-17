@@ -1,2 +1,2 @@
-# furry-barnacle
-Flask frontend for Hashcat and related tools
+# descent
+A documentation tool.
