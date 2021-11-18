@@ -12,7 +12,7 @@ def minimal(obey_gitignore: bool = True):
         with open(".gitignore") as file:
             files_to_ignore += [item.strip().replace('/', '') for item in file.readlines()]
 
-    for current_dir, sub_dirs, files in os.walk('.', topdown=True):
+    for current_dir, sub_dirs, files in os.walk('.'):
         if current_dir != '.' and current_dir.split('/')[1] in files_to_ignore:
             continue
         else:
