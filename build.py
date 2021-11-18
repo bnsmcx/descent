@@ -3,10 +3,9 @@ import typer
 app = typer.Typer()
 
 
-@app.command()
-def build():
-    """Generate documentation"""
-    pass
+@app.callback()
+def callback():
+    """Generate documentation as pdf, html, or md"""
 
 
 if __name__ == "__main__":

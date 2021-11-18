@@ -3,8 +3,8 @@ import typer
 app = typer.Typer()
 
 
-@app.command()
-def deploy():
+@app.callback()
+def callback():
     """Begin your project here"""
     pass
 
